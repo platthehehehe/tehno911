@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Быстрая регистрация — Техно 911</title>
+    <link rel="stylesheet" href="/tehno911/src/reg/style.css">
+</head>
+<body>
+
+    <!-- ШАПКА САЙТА (Единая для всего сайта) -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">ТЕХНО 911</div>
+                <div class="header-info">Продажа и ремонт компьютерной техники</div>
+                <div class="auth-links">
+                    <a href="#">Регистрация</a> | <a href="#">Вход</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- НАВИГАЦИЯ -->
+    <nav class="main-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Магазин</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ОСНОВНОЙ КОНТЕНТ: ФОРМА РЕГИСТРАЦИИ -->
+    <main class="content-area">
+        <div class="container">
+            
+            <div class="registration-card">
+                
+                <!-- Шапка формы -->
+                <div class="card-header">
+                    <h2>Быстрая регистрация</h2>
+                    <p>Если Вы уже зарегистрированы, перейдите на <a href="#" class="login-link">страницу входа в систему</a></p>
+                </div>
+
+                <!-- Тело формы -->
+                <form action="#" method="POST">
+                    <div class="form-columns">
+                        
+                        <!-- Левая колонка: Основная информация -->
+                        <div class="form-column">
+                            <h3>Основная информация</h3>
+                            
+                            <div class="form-row">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required placeholder="example@mail.ru">
+                            </div>
+
+                            <div class="form-row">
+                                <label for="password">Пароль</label>
+                                <input type="password" id="password" name="password" required>
+                            </div>
+
+                            <div class="form-row">
+                                <label for="confirm-password">Подтвердите пароль</label>
+                                <input type="password" id="confirm-password" name="confirm-password" required>
+                            </div>
+
+                            <div class="form-row">
+                                <label for="first-name">Имя</label>
+                                <input type="text" id="first-name" name="first-name" required>
+                            </div>
+
+                            <div class="form-row">
+                                <label for="last-name">Фамилия</label>
+                                <input type="text" id="last-name" name="last-name" required>
+                            </div>
+
+                            <div class="form-row">
+                                <label for="phone">Телефон</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="+7 (___) ___-__-__">
+                            </div>
+                        </div>
+
+                        <!-- Правая колонка: Ваш адрес -->
+                        <div class="form-column">
+                            <h3>Ваш адрес</h3>
+
+                            <div class="form-row">
+                                <label for="country">Страна</label>
+                                <input type="text" id="country" name="country" required value="Россия">
+                            </div>
+
+                            <div class="form-row">
+                                <label for="region">Регион</label>
+                                <input type="text" id="region" name="region" required placeholder="Московская обл.">
+                            </div>
+
+                            <div class="form-row">
+                                <label for="city">Город</label>
+                                <input type="text" id="city" name="city" required>
+                            </div>
+
+                            <div class="form-row">
+                                <label for="zip">Индекс</label>
+                                <input type="text" id="zip" name="zip" required maxlength="6">
+                            </div>
+
+                            <div class="form-row">
+                                <label for="address">Адрес</label>
+                                <input type="text" id="address" name="address" required placeholder="ул. Ленина, д. 10, кв. 5">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Нижняя панель с кнопкой отправки -->
+                    <div class="card-footer">
+                        <button type="submit" class="btn-submit">Продолжить</button>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- ПОДВАЛ (ФУТЕР) -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-top-row">
+                <div class="footer-about">
+                    <h3>Контактная информация</h3>
+                    <p>Московская область, Сергиев Посад, пр-т Красной Армии, 212А</p>
+                    <p>Пн-Пт: 09:00 - 18:00, Сб: 10:00 - 16:00</p>
+                    <p><strong>+7 (977) 100-11-11</strong></p>
+                </div>
+                <div class="footer-cta">
+                    <div class="info-box">sales@sptechnology.ru</div>
+                    <div class="info-box">ООО «Техно 911»</div>
+                </div>
+            </div>
+            
+            <hr class="divider">
+
+            <div class="footer-links-grid">
+                <div class="link-col">
+                    <h4>Клиентам</h4>
+                    <a href="#">Статус ремонта</a>
+                    <a href="#">Доставка</a>
+                    <a href="#">Гарантия</a>
+                </div>
+                <div class="link-col">
+                    <h4>Сервис</h4>
+                    <a href="#">Цены</a>
+                    <a href="#">Диагностика</a>
+                    <a href="#">Сборка ПК</a>
+                </div>
+                <div class="link-col">
+                    <h4>Компания</h4>
+                    <a href="#">О нас</a>
+                    <a href="#">Новости</a>
+                    <a href="#">Карта</a>
+                </div>
+                <div class="link-col">
+                    <h4>Кабинет</h4>
+                    <a href="#">Вход</a>
+                    <a href="#">Заказы</a>
+                    <a href="#">Почта</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
